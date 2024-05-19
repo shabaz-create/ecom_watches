@@ -3,17 +3,18 @@
 }
 
 
-#logo>img{
-    width: 90px;
+#logo>a>img{
+    width: 5em;
     height: auto;
     margin-right: 30vw;
+    padding:10px
 }
-
 nav{
-background-color: purple;
+background-color: rgb(51, 48, 48);
 display: flex;
 justify-content: space-around;
 align-items: center;
+position:sticky;
 }
 
 #nav-bar{
@@ -30,14 +31,17 @@ list-style-type:none;
 #nav-bar>li>a{
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size:2em;
+    font-family: monospace;
+}
+#nav-bar>li:{
+    transition:transform 2s ease-in;
 }
 
-
-#nav-bar>li>a:hover{
-    font-size: 1.1em;
-    transition: ease-in;
+#nav-bar>li:hover{
+    color:yellow;
     text-decoration: underline;
+    transform: scale(1.08);
 }
 
 
