@@ -1,5 +1,9 @@
 *{
     margin:0;
+   
+}
+nav,body,section,footer{
+    min-width: 650px;
 }
 
 #logo>a>img{
@@ -59,6 +63,8 @@ list-style-type:none;
 li>a{
    font-weight: bolder;
 }
+
+
 @media (min-width:1000px){
     .image-container{
         height:92.5vh;
@@ -77,6 +83,41 @@ li>a{
     80%{background-image: url("./resources/banner5.jpeg");}
     100%{background-image: url("./resources/banner1.jpeg");}
 }
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap:20px;
+    padding-top:20px;
+    background-color:rgb(231, 238, 239)
+}
+.products>div{
+    border:1px solid black;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+    border-bottom:3px solid black;
+    text-align: center;
+    overflow:hidden;
+    background-color: white;
+    color:black;
+    margin-bottom:20px;
+    
+}
+
+.products>div:hover{
+    color:white;
+    transform: scale(1.025);
+    transition: transform 0.25s ease-in-out;
+    background-color: black;
+    border-radius:5%;
+}
+.products>div>img{
+    max-width:280px;
+    border-bottom:2px solid black;
+
+}
+
     /*Section-Work under progress, don't modify this for now*/
 section{
     height: 400px;
