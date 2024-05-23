@@ -46,7 +46,7 @@ list-style-type:none;
 }
 .image-container{
     animation-name:slideShow;
-    animation-duration:10s;
+    animation-duration:20s;
     background-size:100%;
     animation-iteration-count: infinite;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ list-style-type:none;
 }
 .image-container>h1{
     text-align: center;
-    color:grey;
+    color:rgb(54, 235, 235);
 }
 
 li>a{
@@ -77,10 +77,9 @@ li>a{
 
 @keyframes slideShow {
     0%{background-image: url("./resources/banner1.jpeg");}
-    20%{background-image: url("./resources/banner2.jpeg");}
-    40%{background-image: url("./resources/banner3.jpeg");}
-    60%{background-image: url("./resources/banner4.jpeg");}
-    80%{background-image: url("./resources/banner5.jpeg");}
+    25%{background-image: url("./resources/banner2.jpeg");}
+    50%{background-image: url("./resources/banner4.jpeg");}
+    75%{background-image: url("./resources/banner5.jpeg");}
     100%{background-image: url("./resources/banner1.jpeg");}
 }
 
@@ -104,7 +103,9 @@ li>a{
     margin-bottom:20px;
     
 }
-
+body{
+    background-color:rgb(231, 238, 239);
+}
 .products>div:hover{
     color:white;
     transform: scale(1.025);
@@ -115,16 +116,46 @@ li>a{
 .products>div>img{
     max-width:280px;
     border-bottom:2px solid black;
-
 }
 
-    /*Section-Work under progress, don't modify this for now*/
 section{
     height: 400px;
     width: auto;
     display:flex;
     justify-content: center;
-    align-items:center
+    align-items:center;
+    gap:50px;
+    background-image: url("./resources/banner3.jpeg");
+    background-size: cover;
+    min-height:200px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+#email{
+    width:400px;
+    font-size: 40px;
+    border:1px solid black;
+    border-radius: 3%;
+}
+#email:hover{
+    background-color: rgb(191, 229, 229);
+}
+#submit{
+    text-align: center;
+    width: 150px;
+    font-size:20px;
+    height:40px;
+}
+#submit:hover{
+    background-color: rgb(7, 93, 7);
+    color:white;
+    border-radius:5%;
 }
 
 #footer{
